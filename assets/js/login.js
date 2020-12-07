@@ -61,10 +61,10 @@ $(function () {
         };
         layer.msg("登录成功！");
         // 将登录成功得到的 token 字符串，保存到 localStorage 中
-        // 因为下次登录还需要验证身份，所以要本地存储
+        // 因为下次登录还需要验证身份，所以要先本地存储
         localStorage.setItem('token', res.token);
         // 跳转到后台主页
-        location.href = "/index.html";
+        location.href = '/index.html'
       }
     })
   })
