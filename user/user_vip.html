@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" />
+    <link rel="stylesheet" href="/assets/css/user/user_vip.css" />
+  </head>
+  <body>
+    <div class="layui-card">
+      <div class="layui-card-header">一次注册，终身免费</div>
+      <div class="layui-card-body">
+        <form class="layui-form" action="">
+          <div class="layui-form-item">
+            <label class="layui-form-label">账号：</label>
+            <div class="layui-input-block">
+              <input
+                type="text"
+                name="title"
+                required
+                lay-verify="required"
+                placeholder="请输入账号"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">密码：</label>
+            <div class="layui-input-inline">
+              <input
+                type="password"
+                name="password"
+                required
+                lay-verify="required"
+                placeholder="请输入密码"
+                autocomplete="off"
+                class="layui-input"
+              />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">套餐</label>
+            <div class="layui-input-block">
+              <select name="city" lay-verify="required">
+                <option value=""></option>
+                <option value="0">周卡</option>
+                <option value="1">月卡</option>
+                <option value="2">季卡</option>
+                <option value="3">年卡</option>
+              </select>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">支付方式</label>
+            <div class="layui-input-block">
+              <input type="checkbox" name="like[write]" title="微信" />
+              <input type="checkbox" name="like[read]" title="支付宝" checked />
+              <input type="checkbox" name="like[dai]" title="点卡" />
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+              <input type="radio" name="sex" value="" title="" />
+              我已阅读<a
+                href="/user/user_treaty.html"
+                target="fm"
+                style="color: blue"
+                >条约</a
+              >并遵守
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <button class="layui-btn" lay-submit lay-filter="formDemo">
+                付款
+              </button>
+              <button type="reset" class="layui-btn layui-btn-primary">
+                取消
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+  </body>
+</html>
